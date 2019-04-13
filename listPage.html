@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.head {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ 
+ 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.column:hover {
+ color:#4286f4;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #4286f4;
+  color: white;
+}
+.head {
+  color: #4286f4;
+  font-size: 40px;
+}
+a:link {
+  text-decoration: none;
+  color: #4286f4;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h2 align="middle" class="head">PRIMEFLIX TV</h2>
+<p align="middle"> One app for every Live TV channels, Movies, Netflix and more.</p>
+ <marquee behavior="alternate"><b>💀Welcome To The Pirated World💀</marquee>
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+<!-- Row starts from here -->
+<div class="row">
+   <div  class="column" style="background-color:#ccc;">
+    <a href="http://go:ipl"><h2 >IPL</h2></a>
+    <p>Watch live IPL 2019</p>
+  </div>
+<div class="row">
+   <div  class="column" style="background-color:#eee;">
+    <a href="http://go:chat"><h2 >Live Chat</h2></a>
+    <p>Live Chat With App Members</p>
+  </div>
+
+<div class="row">
+   <div  class="column" style="background-color:#ddd;">
+    <a href="http://go:tv"><h2 >Live TV</h2></a>
+    <p>Enjoy Live TV Channels (Indian)</p>
+  </div>
+<div class="row">
+   <div  class="column" style="background-color:#ccc;">
+    <a href="http://go:hindi"><h2 >Hindi Movies</h2></a>
+    <p>Watch Online or Download Hindi Movies</p>
+  </div>
+
+<div class="row">
+   <div  class="column" style="background-color:#bbb;">
+    <a href="http://go:gaana"><h2 >Gaana Radio</h2></a>
+    <p>Listen to Best Gaana Radio Stations</p>
+  </div>
+
+<div class="row">
+   <div  class="column" style="background-color:#aaa;">
+    <a href="http://go:altbalaji"><h2 >Alt Balaji</h2></a>
+    <p>Watch or Download Alt Balaji Originals</p>
+  </div>
+
+<div class="row">
+   <div  class="column" style="background-color:#ddd;">
+    <a href="http://go:Netflix"><h2 >Netflix Originals</h2></a>
+    <p>Latest Netflix Original Shows</p>
+  </div>
+
+<div class="row">
+   <div  class="column" style="background-color:#bbb;">
+    <a href="http://go:Netflixm"><h2 >Netflix Movies</h2></a>
+    <p>Latest Netflix Movies</p>
+  </div>
+<div class="row">
+  <div  class="column" style="background-color:#aaa;">
+   <a href="http://go:englishm"><h2 >English Movies</h2></a>
+   <p>Download or Watch Online Latest English Movies</p>
+ </div>
+ <div class="row">
+ <div  class="column" style="background-color:#ccc;">
+ <a href="http://go:videos"><h2 >Video Sharing</h2></a>
+ <p>Share funny videos with all users </p>
+ </div>
+ <div class="row">
+ <div  class="column" style="background-color:#ddd;">
+ <a href="http://go:hotstar"><h2 >Hotstar Specials</h2></a>
+ <p>Latest Hotstar Special Shows</p>
+ </div>
+ <div class="row">
+ <div  class="column" style="background-color:#bbb;">
+ <a href="http://go:inter"><h2 >Internationals</h2></a>
+ <p>Live International Channels</p>
+ </div>
+ <div class="row">
+ <div  class="column" style="background-color:#aaa;">
+ <a href="http://go:special"><h2 >PrimeFlix Specials</h2></a>
+ <p>Requested Stuff by our followers, Like GOT Channels</p>
+ </div>
+ <div class="row">
+ <div  class="column" style="background-color:#ccc;">
+ <a href="http://go:about"><h2 >About Us</h2></a>
+ <p>The Team Behind PrimeflixTV, #PrimeFlixPirates</p>
+ </div>
+ <marquee behavior="alternate"><b>Made With ❤️ By #PrimeFlix</b></marquee>
+<div class=
+</div>
+<!-- Row ends from here -->
+<script>
+var elements = document.getElementsByClassName("column");
+
+var i;
+
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<!-- Page by DNI9 -->
+</body>
+</html>
